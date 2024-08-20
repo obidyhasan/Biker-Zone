@@ -33,12 +33,11 @@
 
 </head>
 <body class="font-poppins">
-    
-    <!-- Header -->
-    <header class="max-w-7xl mx-auto px-4">
 
-        <!-- Nav Bar -->
-        <nav class="py-5">
+  
+    <!-- Nav Bar -->
+    <section class="sticky top-0 z-10 bg-white">
+          <nav class="py-5 max-w-7xl mx-auto px-4">
             <div class="navbar bg-base-100">
                 <div class="navbar-start flex-grow">
                   <div class="dropdown">
@@ -68,7 +67,7 @@
                   </div>
                   <a class="text-2xl font-extrabold">Bike Dekho</a>
                 </div>
-
+    
                 <div class="navbar-center hidden lg:flex mr-5">
                   <ul class="menu menu-horizontal px-1 font-medium">
                     <li><a>Home</a></li>
@@ -77,12 +76,16 @@
                     <li><a>Contact</a></li>
                   </ul>
                 </div>
-
+    
                 <div>
                   <a class="btn bg-primary-color text-white rounded-[4px] px-6">Button</a>
                 </div>
               </div>
         </nav>
+    </section>
+    
+    <!-- Header -->
+    <header class="max-w-7xl mx-auto px-4">
 
         <!-- Hero Section -->
         <section class="p-2">
@@ -171,6 +174,10 @@
       <!-- Featured Section -->
       <section class="my-20">
         <h1 class="text-3xl text-center font-bold">Featured Bikes In This Year</h1>
+        <div class="text-center mt-2">
+          <p class="font-semibold text-primary-color">Best bike Collection</p>
+          <hr class="w-20 h-[3px] rounded bg-primary-color mx-auto">
+        </div>
 
         <!-- Container -->
         <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 my-14">
@@ -362,7 +369,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 mt-20">
 
           <div>
-            <img class="mx-auto" src="./images/others/faq.png" alt="">
+            <img class="mx-auto lg:mx-0" src="./images/others/faq.png" alt="">
           </div>
 
           <!-- Accordion Section -->
@@ -409,7 +416,41 @@
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="bg-black text-neutral-content py-10">
+      
+      <section class="max-w-7xl mx-auto p-6 list-none flex justify-between md:flex-row flex-col-reverse">
+
+
+        <div class="space-y-5">
+          
+          <div class="flex gap-6 flex-wrap">
+            <li><a href="">Download Now</a></li>
+            <li><a href="">License</a></li>
+          </div>
+          <div class="flex gap-6 flex-wrap">
+            <li><a href="">About</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </div>  
+
+          
+          <p class="text-gray-400">© 2020 bike. All rights reserved</p>
+
+        </div>
+
+        <div class="space-y-4  md:mb-0 mb-10">
+          <p>Get the App</p>
+          <img class="w-40" src="./images/others/android.png" alt="">
+          <img class="w-40" src="./images/others/ios.png" alt="">
+        </div>
+
+ 
+      </section>
+
+    </footer>
 
 </body>
 </html>
