@@ -23,14 +23,16 @@
                 'primary-color': '#E76F51',
                 'bg-color' : 'rgba(231, 111, 81, 0.1)',
               },
-              fontFamily: 'Poppins',
+              fontFamily: {
+                poppins : 'Poppins',
+              }
             }
           }
         }
     </script>
 
 </head>
-<body>
+<body class="font-poppins">
     
     <!-- Header -->
     <header class="max-w-7xl mx-auto px-4">
@@ -56,7 +58,7 @@
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-semibold">
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-medium">
                       <li><a>Home</a></li>
                       <li><a>Shop</a></li>
                       <li><a>News</a></li>
@@ -68,7 +70,7 @@
                 </div>
 
                 <div class="navbar-center hidden lg:flex mr-5">
-                  <ul class="menu menu-horizontal px-1 font-semibold">
+                  <ul class="menu menu-horizontal px-1 font-medium">
                     <li><a>Home</a></li>
                     <li><a>Shop</a></li>
                     <li><a>News</a></li>
@@ -84,7 +86,7 @@
 
         <!-- Hero Section -->
         <section class="p-2">
-            <div class="carousel w-full bg-bg-color">
+            <div class="carousel w-full bg-bg-color rounded">
 
                 <!-- Slider 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
@@ -92,7 +94,7 @@
                     <div class="md:flex md:gap-8 md:px-20 p-5 md:py-10 items-center w-full space-y-10">
                         <!-- Content -->
                         <div class="md:w-1/2">
-                            <h2 class="lg:text-5xl md:text-4xl text-4xl font-extrabold md:leading-tight leading-tight lg:leading-tight max-w-sm">Ride-on R15 V4 with Smile</h2>
+                            <h2 class="lg:text-5xl md:text-4xl text-4xl font-bold md:leading-tight leading-tight lg:leading-tight max-w-sm">Ride-on R15 V4 with Smile</h2>
                             <p class="my-5 text-gray-700 text-sm max-w-xs">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat  duis enim velit mollit.</p>
                             <button class="btn bg-primary-color text-white px-6 rounded-[4px]">Purchase</button>
                         </div>
@@ -164,7 +166,32 @@
     </header>
 
     <!-- Main Section -->
-    <main></main>
+    <main class="max-w-7xl mx-auto px-6">
+
+      <!-- Featured Section -->
+      <section class="my-20">
+        <h1 class="text-3xl text-center font-bold">Featured Bikes In This Year</h1>
+
+        <!-- Container -->
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 my-16">
+
+          <div>
+            <img class="grayscale sm:w-8/12 w-9/12 h-full object-contain mx-auto " src="./images/others/feature-bike.png" alt="">
+          </div>
+
+          <div>
+            <img class="grayscale-0 sm:w-8/12 w-9/12 h-full object-contain mx-auto" src="./images/others/feature-bike.png" alt="">
+          </div>
+
+          <div>
+            <img class="grayscale sm:w-8/12 w-9/12 h-full object-contain mx-auto" src="./images/others/feature-bike.png" alt="">
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
 
     <!-- Footer -->
     <footer></footer>
